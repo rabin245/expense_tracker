@@ -37,6 +37,8 @@ dependencies:
 
   # gsheets
   gsheets: ^0.3.2
+#  provider
+  provider: ^6.0.2
 
 dev_dependencies:
   flutter_test:

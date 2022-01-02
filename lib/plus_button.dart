@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class PlusButton extends StatelessWidget {
   const PlusButton({Key? key, required this.function}) : super(key: key);
 
-  final function;
+  final dynamic function;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -14,7 +14,7 @@ class PlusButton extends StatelessWidget {
           color: Colors.grey[400],
           shape: BoxShape.circle,
         ),
-        height: 75,
+        height: 60,
         width: 75,
         child: const Center(
           child: Text(

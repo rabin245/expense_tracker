@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TopNeuCard extends StatelessWidget {
-  TopNeuCard({
+  const TopNeuCard({
     Key? key,
     required this.balance,
     required this.income,
@@ -85,17 +85,13 @@ class TopNeuCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
-                          width: 10,
-                        ),
+                        const SizedBox(width: 10),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('Expense',
                                 style: TextStyle(color: Colors.grey[500])),
-                            const SizedBox(
-                              height: 5,
-                            ),
+                            const SizedBox(height: 5),
                             Text(
                               '\$' + expense,
                               style: TextStyle(
@@ -112,6 +108,7 @@ class TopNeuCard extends StatelessWidget {
             ],
           ),
         ),
+        // for neumorphism effect
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.grey[300],
