@@ -60,6 +60,7 @@ class _HomePageState extends State<HomePage> {
                           child: Form(
                             key: _formKey,
                             child: TextFormField(
+                              keyboardType: TextInputType.number,
                               controller: _textControllerAmount,
                               decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
