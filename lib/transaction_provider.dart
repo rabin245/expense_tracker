@@ -12,9 +12,15 @@ class TransactionProvider with ChangeNotifier {
   double totalExpense = 0;
 
   bool get isLoading => _loading;
+
   int get currentTransactionsLength => _currentTransactions.length;
+
   String getTransactionValue(int index, int valueNum) =>
       _currentTransactions[index][valueNum];
+
+  double get getTotalIncome => totalIncome;
+
+  double get getTotalExpense => totalExpense;
 
   //  initialize the spreadsheet
   Future init() async {
@@ -104,8 +110,4 @@ class TransactionProvider with ChangeNotifier {
     }
     notifyListeners();
   }
-
-  double get getTotalIncome => totalIncome;
-
-  double get getTotalExpense => totalExpense;
 }
